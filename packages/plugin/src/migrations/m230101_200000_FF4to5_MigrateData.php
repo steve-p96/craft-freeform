@@ -349,7 +349,7 @@ class m230101_200000_FF4to5_MigrateData extends Migration
                 'minMaxValues' => [$data->minValue ?? null, $data->maxValue ?? null],
             ],
             'confirmation' => [
-                'targetField' => $this->fieldMap[$data->targetFieldHash]?->uid ?? null,
+                /*'targetField' => $this->fieldMap[$data->targetFieldHash]?->uid ?? null,*/
             ],
             'mailing_list' => [
                 'checkedByDefault' => (bool) ($data->value ?? false),
